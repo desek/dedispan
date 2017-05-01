@@ -5,6 +5,7 @@ script:
   - echo "Deploying to FIREBASE!"
 install:
   - npm install -g firebase-tools
-  - functions\npm install
+  - cd functions
+  - npm install
 after_success:
   - firebase deploy --token "$FIREBASE_TOKEN"
