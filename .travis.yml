@@ -1,6 +1,7 @@
 language: node_js
 node_js:
-  - "4.0"
+  - "node"
+  - "7"
 script:
   - echo "Deploying to FIREBASE!"
 install:
